@@ -1,0 +1,14 @@
+@mixin buttons{
+    background:$button-baground-color;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0px;
+    font-weight: 500;
+    color: #fff;
+    
+        &:hover{
+            box-shadow: 0 20px 20px 0 rgba(132,144,255,.3);
+        }
+    
+}

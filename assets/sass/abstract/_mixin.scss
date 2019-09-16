@@ -1,0 +1,101 @@
+@mixin custom-boxshadow($x-axis, $y-axis, $blur, $spread, $color) {
+    -webkit-box-shadow: $x-axis $y-axis $blur $spread $color;
+    -moz-box-shadow: $x-axis $y-axis $blur $spread $color;
+    box-shadow: $x-axis $y-axis $blur $spread $color;
+}
+
+@mixin custom-transition($property, $duration, $ease) {
+    -webkit-transition: $property $duration $ease;
+    -moz-transition: $property $duration $ease;
+    -o-transition: $property $duration $ease;
+    transition: $property $duration $ease;
+}
+
+@mixin custom-display($value) {
+    display: $value;
+}
+@mixin custom-justify-content($justify) {
+    -webkit-justify-content: $justify;
+       -moz-justify-content: $justify;
+        -ms-justify-content: $justify;
+            justify-content: $justify;
+              -ms-flex-pack: $justify;
+}
+
+@mixin custom-borderradius($top-left, $top-right, $bottom-right, $bottom-left) {
+    -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    -ms-border-radius: $top-left $top-right $bottom-right $bottom-left;
+    border-radius: $top-left $top-right $bottom-right $bottom-left;
+}
+@mixin custom-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+  }
+
+@mixin custom-btn ($padding,$font-size,$background,$color,$line-height,$letterspacing){
+    padding: $padding;
+    font-size: $font-size;
+    background: $background;
+    color: $color;
+    line-height: $line-height;
+    letter-spacing: $letterspacing;
+    &:hover{
+        background:map-get($colors , hover-color );
+    }
+} 
+
+
+
+@mixin custom-border($direction, $width, $style, $color) {
+    border-#{$direction}: $width $style $color;
+  }
+
+@mixin custom-hover {
+    &:hover {
+        color: $primary-color;
+    }
+}
+@mixin custom-display($value){
+    display: $value;
+}
+@mixin opacity($opacity) {
+    opacity: $opacity;
+
+    $opacity-ie: $opacity * 100;
+
+    filter: alpha(opacity = $opacity-ie);
+}
+
+
+// @mixin custom-fontsize($size) {
+//     @if($size == extra-large) {
+//         font-size: 60px;
+//     } 
+//     @else if ($size == large) 
+//     {
+//         font-size: 55px;
+//     } 
+//     @else if ($size == medium) 
+    
+//     {
+//         font-size: 32px;
+//     } 
+//     @else if ($size == extra-medium) 
+    
+//     {
+//         font-size: 18px;
+//     } 
+//     @else if ($size == small) 
+    
+//     {
+//         font-size: 16px;
+//     } 
+   
+//     @else 
+//     {
+//         font-size: $global-font-size;
+//     }
+// }

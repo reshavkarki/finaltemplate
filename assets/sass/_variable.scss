@@ -1,0 +1,25 @@
+//font-path
+
+$lato-font-path:"./../fonts/lato/";
+
+//global
+$global-font-family: 'Lato',sans-serif;
+
+$global-font-size:14px;
+$global-line-height:1.5;
+
+//colors
+$colors:(
+white:#fff,
+primary-text-color:#222,
+secondary-text-color:#01effc,
+text-underline-color:linear-gradient(180deg, #01effc 0%, #485ff2 99%),
+small-font-color:#777,
+hover-color:linear-gradient(-180deg, #485ff2 0%, #01effc 99%),
+black:#222,
+card-color: linear-gradient(-180deg, rgba(1,239,252,0.8) 0%, rgba(72,95,242,0.8) 99%),
+footer-border-color:#38352f,
+footer-background-color:black,
+media-border-color:#525252,
+);
+//typography

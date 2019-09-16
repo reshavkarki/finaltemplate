@@ -1,0 +1,24 @@
+
+@font-face {
+    font-family: 'Lato';
+    src: url($lato-font-path + 'Lato-Regular.eot');
+    src: url($lato-font-path + 'Lato-Regular.eot?#iefix') format('embedded-opentype'),
+        url($lato-font-path + 'Lato-Regular.woff2') format('woff2'),
+        url($lato-font-path + 'Lato-Regular.woff') format('woff'),
+        url($lato-font-path + 'Lato-Regular.ttf') format('truetype'),
+        url($lato-font-path + 'Lato-Regular.svg#Lato-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url($lato-font-path + 'Lato-Bold.eot');
+    src: url($lato-font-path + 'Lato-Bold.eot?#iefix') format('embedded-opentype'),
+        url($lato-font-path + 'Lato-Bold.woff2') format('woff2'),
+        url($lato-font-path + 'Lato-Bold.woff') format('woff'),
+        url($lato-font-path + 'Lato-Bold.ttf') format('truetype'),
+        url($lato-font-path + 'Lato-Bold.svg#Lato-Bold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
